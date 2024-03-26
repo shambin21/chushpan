@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <title>Adidas</title>
+</head>
+<body>
+<header class="header">
+        <div class="header-inner">
+            <div class="header-logo">
+                <a href="index.html"><img src="assets/img/logo.png" alt="Logo"></a>
+            </div>
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="list-item"><a class="nav-link" href="catalog.html">CATALOG</a></li>
+                    <li class="list-item"><a class="nav-link" href="about.html">3 STRIPE LIFE</a></li>
+                    <li class="list-item"><a class="nav-link" href="index.html#footer">CONTACT US</a></li>
+                    <li class="list-item"><a class="nav-link" href="reg.html">SIGN IN</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="profile.html"><img class="header-icon" src="assets/img/user.png" alt="Profile icon"></a>
+                <a href="cart.html"><img class="header-icon" src="assets/img/shopping-bag.png" alt="Shopping bag icon"></a>
+            </div>
+        </div>
+    </header>
+<main class="item-page">
+    <div class="item-inner">
+            <div class="item-left">
+            <img class="item-pic" src="' . $image_path . '" alt="' . $name . '">
+            </div>
+            <div class="item-right">
+            <h1 class="item-title">' . $name . '</h1>
+            <h2 class="item-price">$' . $price . '</h2>
+            <form method="post" action="add_to_cart.php">
+            <input type="hidden" name="id" value="' . $id . '">
+            <label class="size-select_label" for="size">Выберите размер:</label>
+            <select class="size-select" id="size" name="size">
+                <option value="' . strtolower($size) . '">S</option>
+                <option value="' . strtolower($size) . '">M</option>
+            </select><br><br>
+            <button type="submit" class="cart-button" name="add_to_cart">ADD TO CART &rightarrow;</button>
+            </form>
+            </div>
+            </div>
+    </div>
+</main>
+</body>
+</html>
+

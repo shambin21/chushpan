@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <title>Adidas</title>
+</head>
+<body>
+<header class="header">
+        <div class="header-inner">
+            <div class="header-logo">
+                <a href="index.html"><img src="assets/img/logo.png" alt="Logo"></a>
+            </div>
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="list-item"><a class="nav-link" href="catalog.html">CATALOG</a></li>
+                    <li class="list-item"><a class="nav-link" href="about.html">3 STRIPE LIFE</a></li>
+                    <li class="list-item"><a class="nav-link" href="index.html#footer">CONTACT US</a></li>
+                    <li class="list-item"><a class="nav-link" href="reg.html">SIGN IN</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="profile.html"><img class="header-icon" src="assets/img/user.png" alt="Profile icon"></a>
+                <a href="cart.html"><img class="header-icon" src="assets/img/shopping-bag.png" alt="Shopping bag icon"></a>
+            </div>
+        </div>
+    </header>
+<main class="cart">
+    <h1 class="cart-title">Your Bag</h1>
+            <div class="cart-blocks">
+            <div class="cart-block">
+            <div class="cart-img">
+            <img src="assets/img/Adicolor_Classics.jpg" alt="Product name">
+            </div>
+            <div class="cart-right">
+            <div class="cart-top">
+            <p class="cart-name">Product name</p>
+            <p class="cart-price">$500</p>
+            </div>
+            <div class="cart-under">
+            <p class="cart-size">SIZE: L</p>
+            <form action="' . $_SERVER['PHP_SELF'] . '" method="post">
+            <button type="submit" name="checkout" class="cart-button">CHECKOUT &rightarrow;</button>
+            </form>
+            </div>
+            </div>
+            </div>
+            </div>
+    <div class="clear-cart">
+        <form action="clear_cart.php" method="post">
+            <button type="submit" name="clear_cart" class="cart-button">Clear Cart &cross;</button>
+        </form>
+    </div>
+</main>
+</body>
+</html>

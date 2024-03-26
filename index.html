@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <meta name="robots.txt" content="index, follow">
+    <meta name="description" content="Интернет-магазин Adidas предлагает широкий ассортимент спортивной одежды, обуви и аксессуаров. У нас вы найдете кроссовки для бега, футбольную экипировку, тренировочные комплекты, а также стильные уличные наряды. В нашем магазине доступны коллекции для мужчин, женщин и детей. Покупайте качественные товары Adidas с доставкой по всему миру." />
+    <title>Adidas</title>
+</head>
+<body>
+<header class="header">
+        <div class="header-inner">
+            <div class="header-logo">
+                <a href="index.html"><img src="assets/img/logo.png" alt="Logo"></a>
+            </div>
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="list-item"><a class="nav-link" href="catalog.html">CATALOG</a></li>
+                    <li class="list-item"><a class="nav-link" href="about.html">3 STRIPE LIFE</a></li>
+                    <li class="list-item"><a class="nav-link" href="index.html#footer">CONTACT US</a></li>
+                    <li class="list-item"><a class="nav-link" href="html.html">SIGN IN</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="profile.html"><img class="header-icon" src="assets/img/user.png" alt="Profile icon"></a>
+                <a href="cart.html"><img class="header-icon" src="assets/img/shopping-bag.png" alt="Shopping bag icon"></a>
+            </div>
+        </div>
+    </header>
+    <main class="samba-collection">
+        <div class="samba-inner">
+            <img class="samba-pic" src="assets/img/samba.jpg" alt="samba pic">
+            <div class="samba-block">
+                <p class="samba-text">SAMBA</p>
+                <button class="sumba-button">Lets buy &rightarrow;</button>
+            </div>
+        </div>
+    </main>
+    <section class="new-items">
+        <h1 class="new-items-title">New items</h1>
+        <div class="new-items-blocks">
+                        <a href="item-page.php?id=' . $row['id'] . '">
+                        <div class="new-item-block">
+                        <div class="new-item">
+                        <div class="new-item-img">
+                        <img src="assets/img/Adicolor_Classics_3.jpg" alt="Product name">
+                        <div class="price-overlay">
+                        <p>$500</p>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="new-item-name">
+                        <h2>Product name</h2>
+                        </div>
+                        <div class="new-item-category">
+                        <p>Category</p>
+                        </div>
+                        </div>
+                        </a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="polit">
+            <p>Privacy policy</p>
+            <p>8 (987) 736 41-35</p>
+        </div>
+    </footer>
+</body>
+</html>

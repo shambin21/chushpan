@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /css
+Disallow: /js
+Disallow: /admin/
+Disallow: /images/
+Host: www.adidas.ru
+Sitemap: http://adidas.ru/sitemap.xml

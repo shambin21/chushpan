@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+        <title>Adidas</title>
+    </head>
+<body>
+<header class="header">
+        <div class="header-inner">
+            <div class="header-logo">
+                <a href="index.html"><img src="assets/img/logo.png" alt="Logo"></a>
+            </div>
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="list-item"><a class="nav-link" href="catalog.html">CATALOG</a></li>
+                    <li class="list-item"><a class="nav-link" href="about.html">3 STRIPE LIFE</a></li>
+                    <li class="list-item"><a class="nav-link" href="index.html#footer">CONTACT US</a></li>
+                    <li class="list-item"><a class="nav-link" href="reg.html">SIGN IN</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="profile.html"><img class="header-icon" src="assets/img/user.png" alt="Profile icon"></a>
+                <a href="cart.html"><img class="header-icon" src="assets/img/shopping-bag.png" alt="Shopping bag icon"></a>
+            </div>
+        </div>
+    </header>
+    <main class="catalog">
+    <div class="filters">
+    <div class="dropdown">
+        <button class="dropbtn">Сортировка</button>
+        <div class="dropdown-content">
+            <a href="catalog.php?sort=all">All</a>
+            <a href="catalog.php?sort=T-shirt">T-shirt</a>
+            <a href="catalog.php?sort=hoodie">Hoodie</a>
+            <a href="catalog.php?sort=pants">Pants</a>
+            <a href="catalog.php?sort=shoes">Shoes</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Цена</button>
+        <div class="dropdown-content">
+            <a href="catalog.php?price=asc">По возрастанию цены</a>
+            <a href="catalog.php?price=desc">По убыванию цены</a>
+        </div>
+    </div>
+</div>
+        <div class="new-items-blocks">
+                    <a href="item-page.html">
+                    <div class="new-item-block">
+                    <div class="new-item">
+                    <div class="new-item-img">';
+                    <img src="assets/img/Inter_Miami.jpg" alt="Product name">
+                    <div class="price-overlay">
+                    <p>$500</p>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="new-item-name">
+                    <h2>Product name</h2>
+                    </div>
+                    <div class="new-item-category">
+                    <p>Категория</p>
+                    </div>
+                    </div>
+                    </a>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="polit">
+            <p>Privacy policy</p>
+            <p>8 (987) 736 41-35</p>
+        </div>
+    </footer>
+</body>
+</html>
